@@ -1,0 +1,40 @@
+let listform = document.querySelector(".list-form");
+let input = document.querySelector(".input-item");
+let list = document.querySelector(".list-item");
+let h1 = document.querySelector("h1");
+let btn = document.querySelector(".btn")
+btn.style.width = "50px";
+btn.style.height = "46px";
+btn.style.background = "green";
+btn.style.border = "none";
+btn.style.color = "white";
+btn.style.marginLeft = "-53px";
+btn.style.borderRadius = "10px";
+h1.style.fontFamily = "Arial";
+input.style.width = "300px";
+input.style.height = "40px";
+input.style.borderRadius = "10px";
+
+listform.addEventListener("submit", (e) => {
+    e.preventDefault();
+    let item = document.createElement("li");
+    item.innerHTML = input.value;
+    list.appendChild(item);
+    list.style.listStyle = "none";
+    list.style.marginLeft = "-38px";
+    list.style.fontFamily = "Arial";
+    list.style.fontSize = "20px";
+    item.style.width = "350px";
+    item.style.height = "10px";
+    item.style.background = "red";
+    item.style.height = "30px";
+    item.style.background = "red";
+    item.style.height = "30px";
+    item.style.borderRadius = "10px";
+    item.style.height = "30px";
+    item.style.color = "white";
+    item.style.height = "30px";
+    item.style.padding = "10px";
+    item.style.marginTop = "10px";
+    item.style.marginLeft = "512px";
+});
